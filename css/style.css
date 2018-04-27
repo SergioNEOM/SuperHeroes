@@ -21,8 +21,6 @@ body {
     /* -- */
     font-family: 'Avengeance Mightiest Avenger', Arial, sans-serif;
     font-size: 14px;
-    font-weight: 700;
-    line-height: 24px;
     text-transform: uppercase;
     /* -- */
     color: #ffffff;
@@ -42,8 +40,28 @@ header {
 }
 
 .main-logo {
+    padding: 45px 35px;
+}
+
+.main-logo h1 {
     /* font-family: "Avengeance Mightiest Avenger", Verdana, sans-serif; */
+    width: 160px;
     line-height: normal;
     font-size: 28px;
+    margin: 0px;
     color: #000000;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    -webkit-clip-path: inset(100%);
 }
