@@ -1,0 +1,12 @@
+{
+  "workbench.startupEditor": "welcomePage",
+  "files.autoSave": "onFocusChange",
+  "html.suggest.angular1": true,
+  "editor.tabSize": 2,
+  "workbench.iconTheme": "vscode-great-icons",
+  "[go]": {
+      "editor.insertSpaces": false,
+      "editor.formatOnSave": true,
+      "editor.tabSize": 2
+  }
+}

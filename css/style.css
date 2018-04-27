@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Avengeance Mightiest Avenger';
+    src: url('../fonts/AVENGEANCE MIGHTIEST AVENGER.otf');
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    /* -- */
+    font-family: 'Avengeance Mightiest Avenger', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    /* -- */
+    color: #ffffff;
+    background: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+.main-logo {
+    /* font-family: "Avengeance Mightiest Avenger", Verdana, sans-serif; */
+    line-height: normal;
+    font-size: 28px;
+    color: #000000;
+}
