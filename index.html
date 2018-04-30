@@ -25,24 +25,37 @@
                 <li><a href="#">Контакты</a></li>
             </ul>
         </nav>
+        <div class="menu-but"></div>
     </header>
-    <div class="big-slider"></div>
-    <span class="team-selector">Выбрать команду</span>
-    <p>Мы сами выбираем свою сторону</p>
-    <section class="heroes-group-wrapper">
-        <div class="heroes-tech">
-            <h3>Технари</h3>
-            <p>Герои со специальным снаряжением, имитирующем сверхсилы</p>
+    <div class="big-slider">
+        <div class="hulk-slide">
+            <h3>Халк</h3>
+            <p>Халк обладает безграничной мощью и выносливостью, которые напрямую зависят от его эмоционального состояния, — когда Халк злится, он становится сильнее. Его тело способно выдержать любую атаку.</p>
+            <img class="hulk-big" />
         </div>
-        <div class="heroes-mutant">
-            <h3>Мутанты</h3>
-            <p>Герои, способные изменять своё тело, по мере надобности</p>
+    </div>
+    <section class="team-selector">
+        <span class="team-selector_prompt1">Выбрать команду</span>
+        <span class="team-selector_prompt2">Мы сами выбираем свою сторону</span>
+        <div class="heroes-group-wrapper">
+            <div class="heroes-tech heroes-but">
+                <img class="heroes-group-logo" src="img/bat-vector.svg">
+                <h3>Технари</h3>
+                <p>Герои со специальным снаряжением, имитирующем сверхсилы</p>
+            </div>
+            <div class="heroes-mutant heroes-but">
+                <img class="heroes-group-logo" src="img/hand-vector.svg">
+                <h3>Мутанты</h3>
+                <p>Герои, способные изменять своё тело, по мере надобности</p>
+            </div>
+            <div class="heroes-magician heroes-but">
+                <img class="heroes-group-logo" src="img/hat-vector.svg">
+                <h3>Маги</h3>
+                <p>Герои, искусно обученные использованию магии</p>
+            </div>
         </div>
-        <div class="heroes-magician">
-            <h3>Маги</h3>
-            <p>Герои, искусно обученные использованию магии</p>
-        </div>
-    </section><button class="compare-but">Сравнить</button>
+        <button class="compare-but">Сравнить</button>
+    </section>
     <section class="main-features-container"><strong>Мы можем всё</strong></section>
     <section class="main-review-slider"></section>
     <section class="statistics"></section>
@@ -57,6 +70,19 @@
             <a class="copyright-link" href="#"></a>
         </div>
     </footer>
+    <svg height="0" width="0" viewBox="0 0 100 100">
+    <defs>
+      <clipPath id="team-clip" clipPathUnits="objectBoundingBox">
+        <polygon points="0,0 1,.1 1,.98 0,1" stroke="#000000" />
+      </clipPath>
+      <clipPath id="square-button-clip" clipPathUnits="objectBoundingBox">
+        <polygon points="0,0 .8,.2 1,.8 0,1" stroke="#000000" />
+      </clipPath>
+      <clipPath id="rect-button-clip" clipPathUnits="objectBoundingBox">
+          <polygon points="0,.1 .9,0 1,1 0,.9" stroke="#000000" />
+        </clipPath>
+      </defs>
+  </svg>
 </body>
 
 </html>
