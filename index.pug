@@ -1,5 +1,5 @@
 doctype html
-html
+html(lang="ru")
   head
     title SuperHeroes
     meta(charset='utf-8')
@@ -10,6 +10,70 @@ html
     meta(name='apple-mobile-web-app-capable' content='yes')
     meta(name='apple-mobile-web-app-status-bar-style' content='default')
     meta(name='theme-color' content='#885AE1')
-
+    link(rel="stylesheet" type="text/css" href="css/normalize.css")
   body
-    h1 SuperHeroes
+body
+  header
+    .main-logo
+      h1 SuperHero Agency
+    nav.top-menu
+      ul
+        li 
+          a(href="#") Главная
+        li
+          a(href="#") О нас
+        li
+          a(href="#") Герои
+        li
+          a(href="#") Услуги
+        li
+          a(href="#") Контакты
+      .menu-but.visually-hidden
+  .big-slider
+    .hulk-slide
+      h3 Халк        
+      p Халк обладает безграничной мощью и выносливостью, которые напрямую зависят от его эмоционального состояния, — когда Халк злится, он становится сильнее. Его тело способно выдержать любую атаку.
+      img.hulk-big
+    button.hero-detail.but-type1
+  section.team-selector
+    span.team-selector_prompt1 Выбрать команду
+    span.team-selector_prompt2 Мы сами выбираем свою сторону
+    .heroes-group-wrapper
+      .heroes-tech.heroes-but
+        img.heroes-group-logo(src="img/bat-vector.svg")
+        h3 Технари
+        p Герои со специальным снаряжением, имитирующем сверхсилы
+      .heroes-mutant.heroes-but
+        img.heroes-group-logo(src="img/hand-vector.svg")
+        h3 Мутанты
+        p Герои, способные изменять своё тело, по мере надобности
+      .heroes-magician.heroes-but
+        img.heroes-group-logo(src="img/hat-vector.svg")
+        h3 Маги
+        p Герои, искусно обученные использованию магии
+    button.compare-but.but-type2 Сравнить
+  section.main-features-container
+    strong Мы можем всё
+  section.main-review-slider
+  section.statistics
+  section.write-us
+  footer
+    nav
+    .footer-addition
+      .partner-links
+        a.Be-link(href="#")
+        a.M-link(href="#") ?
+        a.globe-link(href="#")
+      a.confidence(href="#") Политика конфиденциальности
+      a.agreement(href="#") Пользовательское соглашение
+      a.copyright-link(href="#")
+  svg(height="0" width="0" viewbox="0 0 100 100")
+    defs
+      clippath#team-clip(clippathunits="objectBoundingBox")
+        polygon(points="0,0 1,.06 1,.98 0,1" stroke="#000000")
+      clippath#square-button-clip(clippathunits="objectBoundingBox")
+        polygon(points="0,0 .8,.2 1,.8 0,1" stroke="#000000")
+      clippath#rect-button-clip(clippathunits="objectBoundingBox")
+        polygon(points="0,.1 .9,0 1,1 0,.9" stroke="#000000")
+      
+
