@@ -15,6 +15,13 @@
     /* font-style: normal; */
 }
 
+@font-face {
+    font-family: 'Exo 2';
+    src: url('../fonts/Exo2.0-Bold.otf');
+    font-style: normal;
+    font-weight: bold;
+}
+
 html {
     margin: 0px;
     padding: 0px;
@@ -40,6 +47,8 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
+    background-color: inherit;
 }
 
 img {
@@ -51,6 +60,27 @@ header {
     justify-content: space-between;
     padding: 45px 35px;
     background-color: #ffffff;
+}
+
+.top-menu {
+    /* Full HD: */
+    width: 560px;
+    margin-left: 662px;
+    /* */
+}
+
+.top-menu ul {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    justify-content: space-between;
+}
+
+.top-menu li {
+    font-family: "Exo 2", Arial, sans-serif;
+    font-size: 16px;
+    list-style-type: none;
+    color: #4F4F4F;
 }
 
 
@@ -73,27 +103,36 @@ header {
     background-color: #22DD00;
 }
 
-.big-slider {
+.banner {
     display: block;
+    width: 100%;
     min-height: 405px;
+    /* HD: */
+    padding-left: 636px;
     margin-bottom: 180px;
-    color: #705095;
+    /* */
+    background-color: #705095;
 }
 
 .hulk-slide {
     min-height: 405px;
-    background: url("../img/hulk-background.png") no-repeat;
-    padding: 72px 35px 10px 45px;
+    /*background: url("../img/hulk-background.png") no-repeat;*/
+    padding-top: 45px;
 }
 
 .hulk-slide h3 {
     display: block;
     font-family: 'v_CCSmash', arial, sans-serif;
-    width: 160px;
+    width: 325px;
+    /* iPhone X  width: 160px;*/
+    padding: 0px;
+    margin: 0px;
     margin: 0 auto;
     margin-bottom: 10px;
-    line-height: 80px;
-    font-size: 68px;
+    /* HD: */
+    line-height: normal;
+    font-size: 120px;
+    /* */
     text-transform: uppercase;
     color: #FFDF3B;
     text-shadow: 6.7891px 6.7891px 2.71564px #000000;
@@ -103,9 +142,13 @@ header {
     font-family: 'Yanone Kaffeesatz';
     font-style: normal;
     margin: 0px;
-    line-height: 17px;
-    font-size: 14px;
+    margin: 0 auto;
+    line-height: normal;
+    font-size: 24px;
+    width: 584px;
+    /* iPhone X -     font-size: 14px;*/
     color: #E0E0E0;
+    /*padding-top: 45px 35px 10px 45px;*/
 }
 
 
@@ -126,10 +169,15 @@ header {
 
 .hulk-big {
     position: absolute;
+    width: 525px;
+    height: 745px;
+    left: 95px;
+    top: 65px;
+    /* iPhone X 
     width: 193px;
     height: 363px;
     left: 190px;
-    top: 352px;
+    top: 352px;*/
     background: url("../img/Hulk-PNG-Clipart.png") no-repeat;
     background-size: 100%;
 }

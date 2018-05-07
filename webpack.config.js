@@ -8,21 +8,17 @@ const resolve = dir => path.resolve(__dirname, dir);
 module.exports = {
     mode: isProd ?
         'production' : 'development',
-
-    entry: {
-        style: resolve('scss/style.scss'),
-        index: resolve('index.pug')
-    },
+    entry: resolve('main.js'),
 
     output: {
         path: resolve('dist'),
-        filename: '[name].js'
+        filename: 'bundle.js'
     },
-
     module: {
         rules: [{
                 test: /\.css$/,
                 use: [
+                    'style-loader',
                     'css-loader',
                     'postcss-loader'
                 ]
@@ -30,9 +26,9 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [
+                    'style-loader',
                     'css-loader',
-                    'postcss-loader',
-                    'sass-loader'
+                    'postcss-loader'
                 ]
             },
             {
