@@ -1,23 +1,32 @@
+/* variables */
+
+$font-AMA: "Avengeance Mightiest Avenger";
+$top-menu-color:#4F4F4F;
+$banner-back-color: #705095;
+$hulk-img: url("../img/Hulk-PNG-Clipart.png");
+
+/*---*/
+
 @font-face {
-    font-family: 'Avengeance Mightiest Avenger';
-    src: url('../fonts/AVENGEANCE MIGHTIEST AVENGER.otf');
+    font-family: $font-AMA;
+    src: url("../fonts/AVENGEANCE MIGHTIEST AVENGER.otf");
 }
 
 @font-face {
-    font-family: 'v_CCSmash';
-    src: url('../fonts/v_CCSmash_v2_2.ttf');
+    font-family: "v_CCSmash";
+    src: url("../fonts/v_CCSmash_v2_2.ttf");
 }
 
 @font-face {
-    font-family: 'Yanone Kaffeesatz';
-    src: url('../fonts/YanoneKaffeesatz-Regular.ttf');
+    font-family: "'Yanone Kaffeesatz";
+    src: url("../fonts/YanoneKaffeesatz-Regular.ttf");
     /* font-weight: 200; */
     /* font-style: normal; */
 }
 
 @font-face {
-    font-family: 'Exo 2';
-    src: url('../fonts/Exo2.0-Bold.otf');
+    font-family: "Exo 2";
+    src: url("../fonts/Exo2.0-Bold.otf");
     font-style: normal;
     font-weight: bold;
 }
@@ -80,7 +89,7 @@ header {
     font-family: "Exo 2", Arial, sans-serif;
     font-size: 16px;
     list-style-type: none;
-    color: #4F4F4F;
+    color: $top-menu-color;
 }
 
 
@@ -89,7 +98,7 @@ header {
 } */
 
 .main-logo h1 {
-    font-family: "Avengeance Mightiest Avenger", Arial, sans-serif;
+    font-family: $font-AMA, Arial, sans-serif;
     width: 160px;
     line-height: normal;
     font-size: 28px;
@@ -105,19 +114,36 @@ header {
 
 .banner {
     display: block;
-    width: 100%;
-    min-height: 405px;
     /* HD: */
-    padding-left: 636px;
     margin-bottom: 180px;
     /* */
-    background-color: #705095;
+}
+
+.banner-wrapper {
+    display: block;
+    width: 100%;
+    min-height: 487px;
+    padding-left: 636px;
+    background-color: $banner-back-color;
+    clip-path: url(#slider-clip);
 }
 
 .hulk-slide {
     min-height: 405px;
-    /*background: url("../img/hulk-background.png") no-repeat;*/
     padding-top: 45px;
+}
+
+.hulk-slide_back {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: $banner-back-color;
+    background-image: $hulk-img;
+    background-repeat: no-repeat;
+    background-position-x: 600px;
+    opacity: 0.1;
+    transform: scale(-1, 1);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
 }
 
 .hulk-slide h3 {
@@ -158,7 +184,7 @@ header {
   left: 0px;
   top: 149px;
   opacity: 0.3;
-  background: url("../img/Hulk-PNG-Clipart.png"), #705095;
+  background: $hulk-img, #705095;
   background-repeat: no-repeat;
   background-size: 100%;
       /* box-shadow: 0px 16.6466px 16.6466px rgba(0, 0, 0, 0.2); * /
@@ -170,16 +196,21 @@ header {
 .hulk-big {
     position: absolute;
     width: 525px;
-    height: 745px;
+    min-height: 745px;
     left: 95px;
-    top: 65px;
+    top: 80px;
     /* iPhone X 
     width: 193px;
     height: 363px;
     left: 190px;
     top: 352px;*/
-    background: url("../img/Hulk-PNG-Clipart.png") no-repeat;
-    background-size: 100%;
+    background: $hulk-img no-repeat;
+    background-size: 90%;
+}
+
+.hero-detail {
+    display: block;
+    min-height: 70px;
 }
 
 .team-selector {

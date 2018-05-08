@@ -30,13 +30,19 @@ body
           a(href="#") Контакты
       .menu-but.visually-hidden
   .banner
-    .hulk-slide
-      h3 Халк        
-      p Халк обладает безграничной мощью и выносливостью, которые напрямую зависят от его эмоционального состояния, — когда Халк злится, он становится сильнее. Его тело способно выдержать любую атаку: Халку не страшны высокие температуры, ядерные взрывы и огнестрельное оружие.
-      span.slide-left &lt;
-      span.slide-right &gt;
-      img.hulk-big
-    button.hero-detail.but-type1
+    .banner-wrapper
+      .hulk-slide_back
+      .hulk-slide
+        h3 Халк        
+        p Халк обладает безграничной мощью и выносливостью, которые напрямую зависят от его эмоционального состояния, — когда Халк злится, он становится сильнее. Его тело способно выдержать любую атаку: Халку не страшны высокие температуры, ядерные взрывы и огнестрельное оружие.
+        span.slide-left &lt;
+        span.slide-right &gt;
+      svg(width="0" height="0")
+        defs
+          clipPath#slider-clip(clippathunits="objectBoundingBox")
+            polygon(points="0,.1 1,0 1,1 0,.85" stroke="#000000")
+      button.hero-detail.but-type1
+    img.hulk-big
   section.team-selector
     span.team-selector_prompt1 Выбрать команду
     span.team-selector_prompt2 Мы сами выбираем свою сторону
