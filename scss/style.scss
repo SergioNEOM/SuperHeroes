@@ -7,6 +7,55 @@ $hulk-img: url("../img/Hulk-PNG-Clipart.png");
 
 /*---*/
 
+@media screen and (min-width: 1440px) {
+    .width-wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    $hulk-big-top-margin: 65px;
+    $hulk-big-left-margin: 95px;
+}
+
+@media screen and (min-width: 1024px) and (max-width:1439px) {
+    .width-wrapper {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    $hulk-big-top-margin: 155px;
+    $hulk-big-left-margin: 598px;
+}
+
+@media screen and (min-width: 375px) and (max-width:1023px) {
+    .width-wrapper {
+        max-width: 375px;
+        margin: 0 auto;
+    }
+    $hulk-big-top-margin: 352px;
+    $hulk-big-left-margin: 197px;
+}
+
+
+/*--   а если меньше 375 ? -*/
+
+
+/*@media screen and (max-width: 1023px) {
+    li {
+        color: red;
+    }
+    .heroes-group-wrapper {
+        flex-direction: column;
+    }
+    .heroes-group-logo {
+        width: 32px;
+        height: 32px;
+    }
+    .heroes-but {
+        font-size: 12px;
+        max-width: 209px;
+    }
+}
+*/
+
 @font-face {
     font-family: $font-AMA;
     src: url("../fonts/AVENGEANCE MIGHTIEST AVENGER.otf");
@@ -18,7 +67,7 @@ $hulk-img: url("../img/Hulk-PNG-Clipart.png");
 }
 
 @font-face {
-    font-family: "'Yanone Kaffeesatz";
+    font-family: "Yanone Kaffeesatz";
     src: url("../fonts/YanoneKaffeesatz-Regular.ttf");
     /* font-weight: 200; */
     /* font-style: normal; */
@@ -71,6 +120,21 @@ header {
     background-color: #ffffff;
 }
 
+.width-wrapper {
+    @media screen and (min-width: 1440px) {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    @media screen and (min-width: 1024px) and (max-width:1439px) {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    @media screen and (min-width: 375px) and (max-width:1023px) {
+        max-width: 375px;
+        margin: 0 auto;
+    }
+}
+
 .top-menu {
     /* Full HD: */
     width: 560px;
@@ -98,12 +162,18 @@ header {
 } */
 
 .main-logo h1 {
-    font-family: $font-AMA, Arial, sans-serif;
+    font-family: "Avengeance Mightiest Avenger", Arial, sans-serif;
     width: 160px;
     line-height: normal;
     font-size: 28px;
     text-transform: uppercase;
     margin: 0px;
+    @media screen and (min-width: 1440px) {}
+    @media screen and (min-width: 1024px) and (max-width: 1439px) {}
+    @media screen and (min-width: 375px) and (max-width: 1023px) {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
     color: #000000;
 }
 
@@ -114,16 +184,10 @@ header {
 
 .banner {
     display: block;
+    width: 100%;
     /* HD: */
     margin-bottom: 180px;
     /* */
-}
-
-.banner-wrapper {
-    display: block;
-    width: 100%;
-    min-height: 487px;
-    padding-left: 636px;
     background-color: $banner-back-color;
     clip-path: url(#slider-clip);
 }
@@ -195,17 +259,27 @@ header {
 
 .hulk-big {
     position: absolute;
-    width: 525px;
-    min-height: 745px;
-    left: 95px;
-    top: 80px;
-    /* iPhone X 
-    width: 193px;
-    height: 363px;
-    left: 190px;
-    top: 352px;*/
-    background: $hulk-img no-repeat;
+    @media screen and (min-width: 1440px) {
+        width: 525px;
+        height: 745px;
+        top: 65px;
+        left: 95px;
+    }
+    @media screen and (min-width: 1024px) and (max-width:1439px) {
+        width: 440px;
+        height: 624px;
+        top: 155px;
+        left: 598px;
+    }
+    @media screen and (min-width: 375px) and (max-width:1023px) {
+        width: 193px;
+        height: 363px;
+        top: 352px;
+        left: 197px;
+    }
+    background: url("../img/Hulk-PNG-Clipart.png") no-repeat;
     background-size: 90%;
+    z-index: 9;
 }
 
 .hero-detail {
@@ -274,21 +348,4 @@ header {
     clip: rect(0 0 0 0);
     clip-path: inset(100%);
     -webkit-clip-path: inset(100%);
-}
-
-@media screen and (max-width: 1023px) {
-    li {
-        color: red;
-    }
-    .heroes-group-wrapper {
-        flex-direction: column;
-    }
-    .heroes-group-logo {
-        width: 32px;
-        height: 32px;
-    }
-    .heroes-but {
-        font-size: 12px;
-        max-width: 209px;
-    }
 }
